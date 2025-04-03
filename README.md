@@ -15,12 +15,21 @@ cd src
 python train.py
 ```
 
-3. Start the Flask server:
+3. Evaluate the model:
+```bash
+python evaluate.py
+```
+This will:
+- Generate a classification report with precision, recall, and F1 scores
+- Create a confusion matrix visualization (saved as confusion_matrix.png)
+- Evaluate the model on the test dataset
+
+4. Start the Flask server:
 ```bash
 python main.py
 ```
 
-4. Test the API:
+5. Test the API:
 ```bash
 python test.py
 ```
@@ -85,7 +94,8 @@ The model is evaluated on a held-out validation set with metrics including:
 │   └── trials.csv
 ├── src/
 │   ├── model.py
-│   └── train.py
+│   ├── train.py
+│   └── evaluate.py
 ├── main.py
 ├── test.py
 ├── requirements.txt
