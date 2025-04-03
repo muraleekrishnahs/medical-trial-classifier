@@ -1,0 +1,4 @@
+src/__pycache__/model.cpython-39.pyc
+src/__pycache__/train.cpython-39.pyc
+src/best_model.pt
+.DS_Store
